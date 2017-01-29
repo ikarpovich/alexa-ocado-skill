@@ -26,7 +26,7 @@ export function handler(options, context: LambdaContext): void {
                 return;
             }
 
-            this.emit(':ask', 'Hello World! ' + itemName);
+            this.emit(':tell', 'Hello World! ' + itemName);
         },
 
         'Unhandled': function() {

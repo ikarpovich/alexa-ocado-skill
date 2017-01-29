@@ -40,12 +40,12 @@ fs.readdirSync(path.join(__dirname, "../dist"))
             awsLambda.deploy(packageName, {
                 region: 'eu-west-1',
                 handler: shortName + '.handler',
-                functionName: 'alexaOcado'
+                functionName: shortName
             }, function(err){
                 if(err) {
                     throw err;
                 }
-                //fs.unlinkSync(packageName);
+                fs.unlinkSync(packageName);
                 console.log("Deployment of " + shortName + " completed");
             });
 

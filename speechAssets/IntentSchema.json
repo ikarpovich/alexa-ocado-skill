@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {
+            "intent": "OcadoIntent",
+            "slots": [
+                {
+                    "name" : "Item",
+                    "type": "GROCERIES"
+                }
+            ]
+        }
+    ]
+}
